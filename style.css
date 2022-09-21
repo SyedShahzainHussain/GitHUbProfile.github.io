@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #2E2A68;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    background-color:#4c469e ;
+    display: flex;
+    border-radius: 20px;
+    padding: 3rem;
+     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+    max-width: 40rem;
+}
+
+.avator{
+
+width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;
+}
+
+.user-info{
+    color:white;
+    margin-left: 3rem;
+}
+
+
+
+
+.info{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin-top: 3rem;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+input{
+    background: transparent;
+    padding: 0.5rem;
+    /* border: none; */
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.repo{
+  
+    display: inline-block;
+    background-color: #2E2A68;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.25rem;
+    margin-top: 3px;
+    border-radius: 1rem;
+    margin-bottom: 3px;
+    
+}
+.repo:hover{
+    background-color:#7770d4;
+}
+.repo:focus{
+ background-color: rgb(36, 34, 134);   
+}
+
+
+
+@media only screen and (max-width:654px){
+    .card{
+        width: 550px;
+    }
+}
+
+
+@media only screen and (max-width:570px){
+    .card{
+        width: 450px;
+        margin-left: 0px;
+    }
+  
+.avator{
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+    
+}
+
+@media only screen and (max-width:460px){
+    .card{
+        width: 400px;
+        margin-left: 0px;
+    }
+    #repo a{
+        width: 200px;
+        margin-left: -20px;
+    }
+    .user-info ul li strong {
+        font-size: 0.9rem;
+        margin-left: 0.2rem;
+    }
+    
+.info{
+    display: flex;
+    list-style-type: none;
+    gap: 5px;
+    margin-top: 3rem;
+    margin-left: -20px;
+}
+
+.avator{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+    
+    .user-info{
+        color:white;
+        margin-left: 2rem;
+    }
+    
+    
+}
+
+@media only screen and (max-width:415px){
+    .card{
+        width: 350px;
+        margin-left: 0px;
+    }
+    #repo a{
+        width: 200px;
+        word-wrap: break-word;
+        margin-left: -10px;
+    }
+    .user-info ul li strong {
+        font-size: 0.8rem;
+        margin-left: 0.4rem;
+    }
+    
+.info{
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+    margin-top: 3rem;
+    margin-left: -10px;
+}
+
+.avator{
+
+    width: 100px;
+    height: 100px;
+    margin-left: -30px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+    
+    .user-info{
+        color:white;
+        margin-left: 2rem;
+    }
+    h2{
+        font-size: 1rem;
+        margin-left: -10px;
+    }
+    p{
+        margin-left: -10px;
+        font-size: 1rem;
+    }
+    
+}
+
+
